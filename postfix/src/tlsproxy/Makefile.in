@@ -8,8 +8,8 @@ CFLAGS	= $(DEBUG) $(OPT) $(DEFS)
 TESTPROG= 
 PROG	= tlsproxy
 INC_DIR = ../../include
-LIBS	= ../../lib/libtls.a ../../lib/libmaster.a ../../lib/libglobal.a \
-	../../lib/libutil.a
+LIBS	= ../../lib/libmaster.a ../../lib/libtls.a ../../lib/libdns.a \
+	../../lib/libglobal.a ../../lib/libutil.a
 
 .c.o:;	$(CC) $(CFLAGS) -c $*.c
 
